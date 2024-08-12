@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="css/tailwind.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
-<body class="mx-5">
-    <h1 class="text-xl">Marvel</h1>
-    <form id="myForm">
-        <label for="name">Name</label>
-        <input type="text" id="startsWith">
-        <button id="btnSearch">Consultar</button>
+<body class="">
+    <h1 class="flex gap-x-3 items-center text-2xl  text-red-500
+        before:h-1 before:flex-1 before:bg-gradient-to-r before:from-transparent before:to-red-500 before:rounded-xl
+        after:h-1 after:flex-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent
+    ">
+        Marvel
+    </h1>
+    <form id="myForm" class="container flex gap-x-4 text-gray-800 my-5">
+        <label class="text-xl">
+            Name
+            <input type="text" id="startsWith" class="border-gray-800 rounded-md border-2 px-2 py-1">
+        </label>
+        <button id="btnSearch" class="bg-blue-500 rounded-md border-none  px-2 py-1 text-gray-100">Consultar</button>
     </form>
 
-    <div id="myContent"></div>
+    <div id="myContent" class="container mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-4"></div>
 
     <script src="script.js"></script>
 </body>
